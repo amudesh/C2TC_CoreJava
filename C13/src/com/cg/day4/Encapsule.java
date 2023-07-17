@@ -1,10 +1,12 @@
 package com.cg.day4;
 
 public class Encapsule {
+
 	private String name;
 	private int age;
 	private String gender;
-	private int number;
+	private int no;
+	
 	public String getName() {
 		return name;
 	}
@@ -23,11 +25,17 @@ public class Encapsule {
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
-	public int getNumber() {
-		return number;
+	public int getNo() {
+		return no;
 	}
-	public void setNumber(int number) {
-		this.number = number;
+	public void setNo(int no) {
+		this.no = no;
 	}
-
+	
+	@Override
+	public String toString() {
+		return "Encapsuled Data [name = " + name + ", age = " + age + ", gender = " + gender + ", no = " + no + "]";
+	}
+	
+	
 }
